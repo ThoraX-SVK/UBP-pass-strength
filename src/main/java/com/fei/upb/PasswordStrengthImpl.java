@@ -114,12 +114,4 @@ public class PasswordStrengthImpl implements PasswordStrength {
 
         return sb.toString();
     }
-
-
-    public static void main(String[] args) {
-        PasswordStrength ps = new PasswordStrengthImpl("CorrectHorsebatteryStapleSaxofon");
-        System.out.println(ps.finalReport());
-    }
-
-
 }
