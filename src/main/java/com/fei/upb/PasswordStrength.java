@@ -2,15 +2,19 @@ package com.fei.upb;
 
 public interface PasswordStrength {
 
-    int getPasswordStrengthLevel();
-
     boolean isSecure();
 
-    double getOfflineCrackingTime();
+    boolean isSecureByZxcvbn();
 
-    double getOnlineCrackingTime();
+    String getZxcvbnFeedback();
 
-    String getOfflineCrackingTimeString();
+    boolean isSecureByNbvcxz();
 
-    String getOnlineCrackingTimeString();
+    String getNbvcxzFeedback();
+
+    double getEntropyLevel();
+
+    boolean isVulnurableToDictionaryAttack();
+
+    String finalReport();
 }
